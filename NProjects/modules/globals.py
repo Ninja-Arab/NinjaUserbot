@@ -7,7 +7,7 @@ from pyrogram.types import ChatPermissions, Message
 
 from config import CMD_HANDLER as cmd
 from NProjects import *
-from NProjects.helpers.SQL.devs import DEVS, WHITELIST
+from NProjects.helpers.SQL.devs import DEVS
 from NProjects.helpers.basic import edit_or_reply
 from NProjects.helpers.PyroHelpers import get_ub_chats
 from NProjects.utils import extract_user, extract_user_and_reason
@@ -48,10 +48,6 @@ async def gban_user(client: Client, message: Message):
         return await Man.edit("**Ngapain NgeGban diri sendiri Goblok 🐽**")
     if user_id in DEVS:
         return await Man.edit("**Gagal GBAN karena dia adalah Pembuat saya 🗿**")
-    if user_id in WHITELIST:
-        return await Man.edit(
-            "**Gagal GBAN karena dia adalah admin @SharingUserbot 🗿**"
-        )
     if user_id:
         try:
             user = await client.get_users(user_id)
@@ -167,10 +163,6 @@ async def gmute_user(client: Client, message: Message):
         return await Man.edit("**Ngapain NgeGmute diri sendiri Goblok 🐽**")
     if user.id in DEVS:
         return await Man.edit("**Gagal GMUTE karena dia adalah Pembuat saya 🗿**")
-    if user.id in WHITELIST:
-        return await Man.edit(
-            "**Gagal GMUTE karena dia adalah admin @SharingUserbot 🗿**"
-        )
     try:
         replied_user = reply.from_user
         if replied_user.is_self:

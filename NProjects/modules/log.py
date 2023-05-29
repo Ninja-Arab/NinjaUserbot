@@ -59,7 +59,7 @@ async def monito_p_m_s(client: Client, message: Message):
             pass
 
 
-@Client.on_message(filters.group & filters.mentioned & filters.incoming)
+@Client.on_message(filters.group & filters.mentioned & filters.incoming & ~filters.bot)
 async def log_tagged_messages(client: Client, message: Message):
     if BOTLOG_CHATID == -100:
         return
