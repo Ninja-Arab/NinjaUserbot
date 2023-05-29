@@ -1,10 +1,6 @@
-# Copyright (C) 2020-2021 by Toni880@Github, < https://github.com/Toni880 >.
-#
-# This file is part of < https://github.com/Toni880/Prime-Userbot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/Toni880/Prime-Userbot/blob/master/LICENSE >
-#
-# All rights reserved. Ken-Kan
+# NProjecst
+# Original Code By : @mrismanaziz (PyroMan-UserBot)
+# Copyright (C) 2023 NK-Userbot
 
 from asyncio import sleep
 import random
@@ -28,27 +24,26 @@ emoji = "😀 😃 😄 😁 😆 😅 😂 🤣 😭 😗 😙 😚 😘 🥰 �
 async def mentionall(client: Client, message: Message):
     await message.delete()
     chat_id = message.chat.id
-    direp = message.reply_to_message
     args = get_arg(message)
     if not args:
-        return await message.edit("**Berikan saya pesan!**")
-
+        args = "Hi!"
     spam_chats.append(chat_id)
     usrnum = 0
     usrtxt = ""
-    async for usr in await client.get_chat_members(chat_id):
+    m = client.iter_chat_members(message.chat.id)
+    async for usr in m:
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.user.id}), "
+        usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.user.id}) "
         if usrnum == 5:
-            txt = f"{args}\n{usrtxt}"
+            txt = f"**{args}**\n\n{usrtxt}"
             try:
                 await client.send_message(chat_id, txt)
             except FloodWait as e:
                 await sleep(e.x)
                 await client.send_message(chat_id, txt)
-                
+
             await sleep(2)
             usrnum = 0
             usrtxt = ""

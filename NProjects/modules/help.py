@@ -2,7 +2,7 @@
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
 # Copyright (C) 2023 NK-Userbot
 
-from prettytable import PrettyTable
+from prettytable import PrettyTable, NONE
 from pyrogram import Client, enums, filters
 from pyrogram.types import Message
 
@@ -23,13 +23,23 @@ async def module_help(client: Client, message: Message):
     elif not message.reply_to_message and len(cmd) == 1:
         ac = PrettyTable()
         ac.header = False
-        ac.title = "NK-Userbot Modules"
         ac.align = "l"
+        ac.vertical_char = "│"
+        ac.hrules = NONE
         for x in split_list(sorted(CMD_HELP.keys()), 2):
             ac.add_row([x[0], x[1] if len(x) >= 2 else None])
-        await edit_or_reply(
-            message, f"```{str(ac)}```\n• @Lunatic0de × @SharingUserbot •"
+        string = ""
+        for x in CMD_HELP:
+            string += "✰`" + str(x) +"`"
+            string += " "
+        texthelp = (
+            f"⛑ **NK-Userbot Modules** ⛑\n\n"
+            f"Creator : [Naka](https://t.me/RedflixHD)\n\n"
+            f"Daftar Perintah :\n"
+            f"```{ac}```\n\n"
+            f"__© @Nakanisme__"
         )
+        await edit_or_reply(message, texthelp, disable_web_page_preview=True)
         await message.reply(
             f"**Contoh Ketik** `{CMD_HANDLER}help afk` **Untuk Melihat Informasi Module**"
         )
@@ -40,7 +50,7 @@ async def module_help(client: Client, message: Message):
             this_command = f"──「 **Help For {str(help_arg).upper()}** 」──\n\n"
             for x in commands:
                 this_command += f"  •  **Command:** `{CMD_HANDLER}{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
-            this_command += "© @Lunatic0de"
+            this_command += "© @Nakanisme"
             await edit_or_reply(
                 message, this_command, parse_mode=enums.ParseMode.MARKDOWN
             )
