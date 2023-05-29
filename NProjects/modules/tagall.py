@@ -20,7 +20,7 @@ emoji = "😀 😃 😄 😁 😆 😅 😂 🤣 😭 😗 😙 😚 😘 🥰 �
 )
 
 
-@Client.on_message(filters.command("tagall", cmd) & filters.me)
+@Client.on_message(filters.command("etag", cmd) & filters.me)
 async def mentionall(client: Client, message: Message):
     await message.delete()
     chat_id = message.chat.id
