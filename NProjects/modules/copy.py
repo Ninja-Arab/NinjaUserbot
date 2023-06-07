@@ -38,10 +38,12 @@ async def colong_media(client: Client, message: Message):
     # else:
         # anjing = dia.caption
     anjing = "Uploaded by NK Userbot"
+    # anjing = dia.caption or None
 
-    if dia.text:
-        await dia.copy(message.chat.id)
-        await message.delete()
+    # if dia.text:
+        # await dia.copy(message.chat.id)
+        # await message.delete()
+
     if dia.photo:
         anu = await client.download_media(dia)
         await client.send_photo(message.chat.id, anu, anjing)
