@@ -32,7 +32,12 @@ async def colong_media(client: Client, message: Message):
             dia = await client.get_messages(chat, msg_id)
         except RPCError:
             await message.edit("Sepertinya terjadi kesalahan")
-    anjing = dia.caption or None
+    if dia.caption == None:
+        # anjing = dia.caption or None
+        anjing = "Uploaded by NK Userbot"
+    else:
+        anjing = dia.caption
+        
     if dia.text:
         await dia.copy(message.chat.id)
         await message.delete()
