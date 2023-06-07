@@ -6,7 +6,7 @@ import os
 
 from pyrogram import *
 from pyrogram import Client, filters
-from pyrogram.errors import RPCError
+from pyrogram.errors import RPCError, UserAlreadyParticipant, InviteHashExpired
 from pyrogram.types import *
 
 from config import CMD_HANDLER as cmd
@@ -20,29 +20,35 @@ async def colong_media(client: Client, message: Message):
     await message.edit("Processing...")
     link = get_arg(message)
     msg_id = int(link.split("/")[-1])
-    if "t.me/c/" in link:
-        try:
-            chat = int("-100" + str(link.split("/")[-2]))
-            dia = await client.get_messages(chat, msg_id)
-        except RPCError:
-            await message.edit("Sepertinya terjadi kesalahan")
-    else:
-        try:
-            chat = str(link.split("/")[-2])
-            dia = await client.get_messages(chat, msg_id)
-        except RPCError:
-            await message.edit("Sepertinya terjadi kesalahan")
-    # if dia.caption == None:
-        # anjing = dia.caption or None
-        # anjing = "Uploaded by NK Userbot"
-    # else:
-        # anjing = dia.caption
-    anjing = "Uploaded by NK Userbot"
-    # anjing = dia.caption or None
 
-    # if dia.text:
-        # await dia.copy(message.chat.id)
-        # await message.delete()
+    if "t.me/+" in message.text or "t.me/joinchat/" in link:
+        try:
+            try:
+                Client.join_chat(link)
+            except Exception as e:
+                await message.edit(f"{e}")
+                return
+            await message.edit("Berhasil Join.")
+        except UserAlreadyParticipant:
+            await message.edit("Kamu sudah menjadi member!")
+        except InviteHashExpired:
+            await message.edit("Tautan Kadaluarsa!")
+        
+    elif "t.me/" in link:
+        if "t.me/c/" in link:
+            try:
+                chat = int("-100" + str(link.split("/")[-2]))
+                dia = await client.get_messages(chat, msg_id)
+            except RPCError:
+                await message.edit("Sepertinya terjadi kesalahan")
+        else:
+            try:
+                chat = str(link.split("/")[-2])
+                dia = await client.get_messages(chat, msg_id)
+            except RPCError:
+                await message.edit("Sepertinya terjadi kesalahan")
+
+    anjing = "Uploaded by NK Userbot"
 
     if dia.photo:
         anu = await client.download_media(dia)
