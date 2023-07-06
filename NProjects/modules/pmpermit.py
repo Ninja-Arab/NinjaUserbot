@@ -169,12 +169,12 @@ async def approvepm(client: Client, message: Message):
     else:
         UNAPPROVED_MSG = DEF_UNAPPROVED_MSG
 
-    async for message in client.search_messages(message.chat.id,
+    async for mesbot in client.search_messages(message.chat.id,
                                                     from_user="me",
                                                     limit=10,
                                                     query=UNAPPROVED_MSG,
                                                     ):
-        await message.delete()
+        await mesbot.delete()
 
     try:
         approve(uid)
