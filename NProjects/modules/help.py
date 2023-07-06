@@ -37,7 +37,7 @@ async def module_help(client: Client, message: Message):
             f"Creator : [Naka](https://t.me/RedflixHD)\n\n"
             f"Daftar Perintah :\n"
             f"```{ac}```\n\n"
-            f"__© @Nakanisme__"
+            f"__© @NProjectSTD__"
         )
         await edit_or_reply(message, texthelp, disable_web_page_preview=True)
         await message.reply(
@@ -50,7 +50,7 @@ async def module_help(client: Client, message: Message):
             this_command = f"──「 **Help For {str(help_arg).upper()}** 」──\n\n"
             for x in commands:
                 this_command += f"  •  **Command:** `{CMD_HANDLER}{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
-            this_command += "© @Nakanisme"
+            this_command += "© @NProjectSTD"
             await edit_or_reply(
                 message, this_command, parse_mode=enums.ParseMode.MARKDOWN
             )

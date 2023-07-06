@@ -10,12 +10,12 @@ class First:
 
 ✣ **Userbot Version :** `{}`
 ✣ **Group Support :** [Highclass Mutualism](t.me/HCMutualism)
-✣ **Channel Man :** [ZeldaProjects](t.me/ZeldaProjects)
-✣ **Owner Repo :** [Zelda](t.me/UnrealZlda)
+✣ **Channel Man :** [NProject Studio](t.me/NProjectSTD)
+✣ **Owner Repo :** [Naka](t.me/RedflixHD)
 ✣ **Repo :** [NK-Userbot](https://github.com/nmiabdfhmy/NK-Userbot)"""
-    CREATOR = 'Created by <a href="https://t.me/RedflixHD">NProjects</a>.'
+    CREATOR = 'Created by <a href="https://t.me/NProjectSTD">NProject Studio</a>.'
     MSG_ON = """
-🔥 **Zelda-Userbot Berhasil Di Aktifkan**
+**NK-Userbot Berhasil Di Aktifkan**
 """
 
 

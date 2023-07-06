@@ -23,7 +23,7 @@ Halo kamu, ini adalah pesan otomatis oleh Userbot.
 • Tunggu hingga pesan kamu di setujui
 • Dilarang Spam Chat
 • 5x Spam Chat, Bot akan otomatis memblokir
-• Subs Channel @ZeldaProjects
+• Subs Channel @NProjectSTD
 
 🚀  NK USERBOT
 """
@@ -163,9 +163,22 @@ async def approvepm(client: Client, message: Message):
         name0 = aname.first_name
         uid = aname.id
 
+    getmsg = gvarstatus("unapproved_msg")
+    if getmsg is not None:
+        UNAPPROVED_MSG = getmsg
+    else:
+        UNAPPROVED_MSG = DEF_UNAPPROVED_MSG
+
     try:
         approve(uid)
-        await message.edit(f"**Menerima Pesan Dari** [{name0}](tg://user?id={uid})!")
+        async for message in client.search_messages(message.chat.id,
+                                                    from_user="me",
+                                                    limit=10,
+                                                    query=UNAPPROVED_MSG,
+                                                    ):
+            await message.delete()
+
+        await message.edit(f"**Hi** [{name0}](tg://user?id={uid}), Pesan kamu sudah di terima!")
     except IntegrityError:
         await message.edit(
             f"[{name0}](tg://user?id={uid}) mungkin sudah disetujui untuk PM."
