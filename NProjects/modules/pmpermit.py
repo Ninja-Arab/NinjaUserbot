@@ -169,16 +169,17 @@ async def approvepm(client: Client, message: Message):
     else:
         UNAPPROVED_MSG = DEF_UNAPPROVED_MSG
 
-    try:
-        approve(uid)
-        async for message in client.search_messages(message.chat.id,
+    async for message in client.search_messages(message.chat.id,
                                                     from_user="me",
                                                     limit=10,
                                                     query=UNAPPROVED_MSG,
                                                     ):
-            await message.delete()
+        await message.delete()
 
-        await message.edit(f"**Hi** [{name0}](tg://user?id={uid}), Pesan kamu sudah di terima!")
+    try:
+        approve(uid)
+
+        await message.edit(f"**Hi [{name0}](tg://user?id={uid}), Pesan kamu sudah di terima!**")
     except IntegrityError:
         await message.edit(
             f"[{name0}](tg://user?id={uid}) mungkin sudah disetujui untuk PM."
