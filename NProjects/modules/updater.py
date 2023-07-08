@@ -1,6 +1,6 @@
 # NProjecst
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
-# Copyright (C) 2023 NK-Userbot
+# Copyright (C) 2023 NERO-BOT
 
 import asyncio
 import socket
@@ -165,7 +165,7 @@ async def upstream(client: Client, message: Message):
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: Update Deploy NK-Userbot Sedang Dalam Proses...`"
+            "`[HEROKU]: Update Deploy NERO-BOT Sedang Dalam Proses...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -182,7 +182,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`NK-Userbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
+            "`NERO-BOT Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
         )
     else:
         try:
@@ -191,7 +191,7 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`NK-Userbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`",
+            "`NERO-BOT Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`",
         )
         args = [sys.executable, "-m", "NProjects"]
         execle(sys.executable, *args, environ)
@@ -260,7 +260,7 @@ async def updaterman(client: Client, message: Message):
 add_command_help(
     "update",
     [
-        ["update", "Untuk melihat list pembaruan terbaru dari NK-Userbot."],
+        ["update", "Untuk melihat list pembaruan terbaru dari NERO-BOT."],
         ["update deploy", "Untuk mengupdate userbot."],
     ],
 )

@@ -1,6 +1,6 @@
 # NProjecst
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
-# Copyright (C) 2023 NK-Userbot
+# Copyright (C) 2023 NERO-BOT
 
 import os
 import sys

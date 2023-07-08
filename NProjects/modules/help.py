@@ -1,6 +1,6 @@
 # NProjecst
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
-# Copyright (C) 2023 NK-Userbot
+# Copyright (C) 2023 NERO-BOT
 
 from prettytable import PrettyTable, NONE
 from pyrogram import Client, enums, filters
@@ -33,7 +33,7 @@ async def module_help(client: Client, message: Message):
             string += "✰`" + str(x) +"`"
             string += " "
         texthelp = (
-            f"⛑ **NK-Userbot Modules** ⛑\n\n"
+            f"⛑ **NERO-BOT Modules** ⛑\n\n"
             f"Creator : [Naka](https://t.me/RedflixHD)\n\n"
             f"Daftar Perintah :\n"
             f"```{ac}```\n\n"

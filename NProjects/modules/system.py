@@ -1,6 +1,6 @@
 # NProjecst
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
-# Copyright (C) 2023 NK-Userbot
+# Copyright (C) 2023 NERO-BOT
 
 import sys
 from os import environ, execle, remove
@@ -38,9 +38,9 @@ async def shutdown_bot(client: Client, message: Message):
         await client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**NK-Userbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**NERO-BOT** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(message, "**NK-Userbot Berhasil di matikan!**")
+    await edit_or_reply(message, "**NERO-BOT Berhasil di matikan!**")
     if HAPP is not None:
         HAPP.process_formation()["worker"].scale(0)
     else:

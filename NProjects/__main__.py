@@ -1,6 +1,6 @@
 # NProjecst
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
-# Copyright (C) 2023 NK-Userbot
+# Copyright (C) 2023 NERO-BOT
 
 import importlib
 
@@ -13,7 +13,7 @@ from NProjects.helpers.misc import create_botlog, heroku
 from NProjects.modules import ALL_MODULES
 
 MSG_ON = """
-**NK-Userbot Telah Aktif!**
+**NERO-BOT Telah Aktif!**
 """
 
 
@@ -36,7 +36,7 @@ async def main():
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("NProjects").info(f"NK-Userbot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+    LOGGER("NProjects").info(f"NERO-BOT v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
     if bot1 and not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -44,7 +44,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("NProjects").info("Starting NK-Userbot")
+    LOGGER("NProjects").info("Starting NERO-BOT")
     install()
     heroku()
     LOOP.run_until_complete(main())

@@ -1,6 +1,6 @@
-# NK-Userbot Telegram
+# NERO-BOT Telegram
 
-NK-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.
+NERO-BOT adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.
 
 Saya membuat repository ini untuk bersenang-senang sekaligus membantu anda mengelola grup secara efisien dan untuk membantu mengurangi kebosanan saat menggunakan telegram.
 
@@ -14,7 +14,7 @@ Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya
 ```
 
 ## 🖇 Deoloy To Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nmiabdfhmy/NK-Userbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nmiabdfhmy/NERO-BOT)
 
 ## 🖇 Generating Pyrogram String Session
     
@@ -29,7 +29,7 @@ Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya
 -  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
 -  [Risman](https://github.com/mrismanaziz) for [PyroMan-UserBot](https://github.com/mrismanaziz)
 
-#### Special Thanks To [Everyone](https://github.com/nmiabdfhmy/NK-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
+#### Special Thanks To [Everyone](https://github.com/nmiabdfhmy/NERO-BOT/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [TeamDerUntergang](https://github.com/TeamDerUntergang/Telegram-SedenUserBot) : SedenUserBot
 -  [TheHamkerCat](https://github.com/TheHamkerCat/WilliamButcherBot) : WilliamButcherBot
 -  [TeamYukki](https://github.com/TeamYukki/YukkiMusicBot) : YukkiMusicBot
@@ -39,4 +39,4 @@ Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya
 -  [Toni](https://github.com/Toni880) : Prime-UserBot
 
 ## 📑 License
-Licensed under [GNU General Public License v3.0](https://github.com/nmiabdfhmy/NK-Userbot/blob/Man-Userbot/LICENSE) All designs were created by [@mrismanaziz](https://github.com/mrismanaziz)
+Licensed under [GNU General Public License v3.0](https://github.com/nmiabdfhmy/NERO-BOT/blob/Man-Userbot/LICENSE) All designs were created by [@mrismanaziz](https://github.com/mrismanaziz)

@@ -1,6 +1,6 @@
 {
-  "name": "NK-Userbot",
-  "description": "[NK-Userbot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.",
+  "name": "NERO-BOT",
+  "description": "[NERO-BOT] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.",
   "stack": "heroku-22",
   "env": {
     "API_ID": {

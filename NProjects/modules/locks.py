@@ -1,6 +1,6 @@
 # NProjecst
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
-# Copyright (C) 2023 NK-Userbot
+# Copyright (C) 2023 NERO-BOT
 
 from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import ChatNotModified

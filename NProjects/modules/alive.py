@@ -1,6 +1,6 @@
 # NProjecst
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
-# Copyright (C) 2023 NK-Userbot
+# Copyright (C) 2023 NERO-BOT
 
 import asyncio
 import os
@@ -41,7 +41,7 @@ async def alive(client: Client, message: Message):
     send = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
     man = (
-        f"**[NK-USERBOT](https://github.com/nmiabdfhmy/NK-Userbot) by [NProjecst](https:/t.me/RedflixHD)**\n\n"
+        f"**[NERO-BOT](https://github.com/nmiabdfhmy/NERO-BOT) by [NProjecst](https:/t.me/RedflixHD)**\n\n"
         f"<b>Bot is running properly.</b>\n\n"
         f"  {emoji} <b>Master :</b> {client.me.mention} \n"
         f"  {emoji} <b>Modules :</b> <code>{len(modules)} Modules</code> \n"

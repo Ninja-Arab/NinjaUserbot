@@ -1,6 +1,6 @@
 # NProjecst
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
-# Copyright (C) 2023 NK-Userbot
+# Copyright (C) 2023 NERO-BOT
 
 
 from pyrogram import Client, filters
@@ -14,7 +14,7 @@ from NProjects.helpers.tools import *
 from .help import *
 
 telegraph = Telegraph()
-r = telegraph.create_account(short_name="NK-Userbot")
+r = telegraph.create_account(short_name="NERO-BOT")
 auth_url = r["auth_url"]
 
 

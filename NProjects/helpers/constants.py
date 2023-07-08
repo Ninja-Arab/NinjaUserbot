@@ -1,21 +1,21 @@
 # NProjecst
 # Original Code By : @mrismanaziz (PyroMan-UserBot)
-# Copyright (C) 2023 NK-Userbot
+# Copyright (C) 2023 NERO-BOT
 
 
 class First:
     ALIVE = "`Still Working On Fire 🔥`"
     REPO = """
-**Hey**, __I am using__ 🔥 **NK-Userbot** 🔥
+**Hey**, __I am using__ 🔥 **NERO-BOT** 🔥
 
 ✣ **Userbot Version :** `{}`
 ✣ **Group Support :** [Highclass Mutualism](t.me/HCMutualism)
 ✣ **Channel Man :** [NProject Studio](t.me/NProjectSTD)
 ✣ **Owner Repo :** [Naka](t.me/RedflixHD)
-✣ **Repo :** [NK-Userbot](https://github.com/nmiabdfhmy/NK-Userbot)"""
+✣ **Repo :** [NERO-BOT](https://github.com/nmiabdfhmy/NERO-BOT)"""
     CREATOR = 'Created by <a href="https://t.me/NProjectSTD">NProject Studio</a>.'
     MSG_ON = """
-**NK-Userbot Berhasil Di Aktifkan**
+**NERO-BOT Berhasil Di Aktifkan**
 """
 
 
