@@ -1,6 +1,6 @@
-# NERO-BOT Telegram
+# NINJA-BOT Telegram
 
-NERO-BOT adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.
+NINJA-BOT adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.
 
 Saya membuat repository ini untuk bersenang-senang sekaligus membantu anda mengelola grup secara efisien dan untuk membantu mengurangi kebosanan saat menggunakan telegram.
 
@@ -13,19 +13,19 @@ Gunakan userbot ini dengan bijak.
 Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya.
 ```
 
-## 🖇 Deploy To Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nmiabdfhmy/NERO-BOT)
+## 🍁 Deploy To Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NinjaUserbot/NINJA-BOT)
 
-## 🖇 Generating Pyrogram String Session
+## 🍁 Generating Pyrogram String Session
     
 > Anda memerlukan APP ID & API HASH Telegram untuk mengambil sesi Pyrogram. ambil APP ID dan API Hash di my.telegram.org
 - Generate Session via <a href="https://repl.it/@mrismanaziz/stringen?lite=1&outputonly=1">Repl</a>
 - Generate Session via <a href="https://t.me/StringManRobot">Telegram String Generation Bot</a>
-## 🏷 Support
+## 🛡️ Support
 
-- Follow Channel [Nakanisme](https://t.me/Nakanisme)
+- Follow Channel [Story Keju](https://t.me/Story_Keju)
 
-## 👨🏻‍💻 Credits
+## ⚔️ Credits
 -  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
 -  [Risman](https://github.com/mrismanaziz) for [PyroMan-UserBot](https://github.com/mrismanaziz)
 
@@ -38,5 +38,5 @@ Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya
 -  [Tofikdn](https://github.com/tofikdn) : Tede
 -  [Toni](https://github.com/Toni880) : Prime-UserBot
 
-## 📑 License
+## 📝 License
 Licensed under [GNU General Public License v3.0](https://github.com/nmiabdfhmy/NERO-BOT/blob/Man-Userbot/LICENSE) All designs were created by [@mrismanaziz](https://github.com/mrismanaziz)
