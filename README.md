@@ -13,7 +13,7 @@ Gunakan userbot ini dengan bijak.
 Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya.
 ```
 
-## 🖇 Deoloy To Heroku
+## 🖇 Deploy To Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nmiabdfhmy/NERO-BOT)
 
 ## 🖇 Generating Pyrogram String Session
