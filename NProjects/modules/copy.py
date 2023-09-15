@@ -82,8 +82,8 @@ async def colong_media(client: Client, message: Message):
     else:
         await message.edit("Sepertinya terjadi kesalahan")
 
-## @Client.on_message(filters.command("copy", cmd) & filters.me)
-@Client.on_message(filters.private)
+@Client.on_message(filters.command("copy", cmd) & filters.me)
+#@Client.on_message(filters.private)
 async def copy_media(client: Client, message: Message):
     dia = message.reply_to_message
     user_id = client.me.id
